@@ -1,11 +1,20 @@
-
+import useLogin from "../hooks/useLogin"
 
 const LoginPage = () => {
 
+    const { onLogin } = useLogin();
+
     return (
-        <>
-            <h1>LoginPage</h1>
-        </>
+        <div className="container mt-5">
+            <h1>Login</h1>
+            <hr />
+
+            <button 
+            onClick={onLogin}
+            className="btn btn-dark">
+                Login
+            </button>
+        </div>
     )
 }
 

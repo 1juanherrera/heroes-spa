@@ -1,7 +1,9 @@
 import { Link, NavLink, useNavigate } from 'react-router-dom';
-
+import useNavbar from "../hooks/useNavbar"
 
 const Navbar = () => {
+
+    const { onLogout } = useNavbar();
 
     return (
         <nav className="navbar navbar-expand-sm navbar-dark bg-dark p-3 m-2 rounded-2">
@@ -48,6 +50,7 @@ const Navbar = () => {
 
                     <button
                         className="nav-item nav-link btn"
+                        onClick={onLogout}
                     >
                         Logout
                     </button>
