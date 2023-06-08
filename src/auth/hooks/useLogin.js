@@ -6,7 +6,9 @@ const useLogin = () => {
     const navigate = useNavigate();
 
     const onLogin = () => {
-        navigate('/marvel')
+        navigate('/', {
+            replace: true
+        })
     }
 
     return {
