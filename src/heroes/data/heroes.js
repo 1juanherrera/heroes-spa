@@ -1,4 +1,4 @@
-export const heroes = [
+const heroes = [
     {
         'id': 'dc-batman',
         'superhero':'Batman', 
@@ -160,3 +160,5 @@ export const heroes = [
         'characters':'Norrin Radd'
     }
 ]
+
+export default heroes
