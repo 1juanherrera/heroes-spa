@@ -26,7 +26,7 @@ const HeroPage = () => {
                 <img 
                 src={`/assets/heroes/${id}.jpg`} 
                 alt={ hero.superhero }
-                className="img-thumbnail"
+                className="img-thumbnail mb-5"
                 />
             </div>
 
