@@ -18,10 +18,10 @@ const HeroesRoutes = () => {
 
                 <Routes>
 
-                    <Route path="/marvel" element={ <Marvelpage /> }/>
-                    <Route path="/dc" element={ <DcPage /> }/>
-                    <Route path="/search" element={ <SearchPage />} />
-                    <Route path="/hero" element={ <HeroPage />} />
+                    <Route path="marvel" element={ <Marvelpage /> }/>
+                    <Route path="dc" element={ <DcPage /> }/>
+                    <Route path="search" element={ <SearchPage />} />
+                    <Route path="/hero/:id" element={ <HeroPage />} />
 
                     <Route path="/" element={ <Navigate to="/marvel" /> } />
                 

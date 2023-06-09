@@ -31,7 +31,7 @@ const HeroCard = ({
                                 <small className="text-muted fst-italic">{ first_appearance }</small>
                             </p>
 
-                            <Link to={`/hero${id}`}>
+                            <Link to={`/hero/${id}`}>
                                 Más... 
                             </Link>
 
