@@ -1,4 +1,4 @@
-
+import { Link } from "react-router-dom"
 
 const HeroCard = ({
     id,
@@ -20,16 +20,20 @@ const HeroCard = ({
 
                     <div className="col-8">
                         <div className="card-body">
-                            <h5 className="card-title text-base">{ superhero }</h5>
+                            <h4 className="card-title text-base fw-semibold">{ superhero }</h4>
                             <p className="card-text">{ alter_ego }</p>
 
                             {
-                                alter_ego !== characters ? <p>{ characters }</p> : ''
+                                alter_ego !== characters && <p>{ characters }</p>
                             }
 
                             <p className="card-text">
-                                <small className="text-secondary">{ first_appearance }</small>
+                                <small className="text-muted fst-italic">{ first_appearance }</small>
                             </p>
+
+                            <Link to={`/hero${id}`}>
+                                Más... 
+                            </Link>
 
                         </div>
                     </div>
