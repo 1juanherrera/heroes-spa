@@ -15,7 +15,7 @@ const HeroPage = () => {
     const navigate = useNavigate()
 
     const onNavigateBack = () => {
-        navigate('/', {
+        navigate(-1, {
             replace: true
         })
     }
