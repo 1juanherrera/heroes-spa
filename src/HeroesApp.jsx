@@ -5,9 +5,7 @@ const HeroesApp = () => {
 
 
     return (
-        <>
-            <AppRouter />
-        </>
+        <AppRouter />
     )
 }
 
