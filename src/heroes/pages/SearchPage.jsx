@@ -1,7 +1,10 @@
+import { useNavigate } from 'react-router-dom'
 import { useForm } from '../../hooks/useForm'
 import HeroCard from '../components/HeroCard'
 
 const SearchPage = () => {
+
+    const navigate = useNavigate();
 
     const { searchText, onInputChange } = useForm({
         searchText: ''
@@ -9,8 +12,9 @@ const SearchPage = () => {
 
     const onSearchSubmit = ( event ) => {
         event.preventDefault();
+        if( searchText.trim().length <= 1 ) return;
 
-        console.log({ searchText })
+        navigate(`?q=${ searchText.toLowerCase() }`)
     }
 
     return (
