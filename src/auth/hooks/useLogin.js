@@ -9,9 +9,12 @@ const useLogin = () => {
 
     const onLogin = () => {
 
+        const lastPath = localStorage.getItem('lastPath') || '/';
+        console.log(lastPath)
+
         login('Juan Herrera');
 
-        navigate('/', {
+        navigate( lastPath, {
             replace: true
         });
     }
