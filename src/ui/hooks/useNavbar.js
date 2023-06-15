@@ -17,8 +17,7 @@ const Navbar = () => {
 
     return {
         onLogout,
-        user,
-        logout
+        user
     }
 }
 

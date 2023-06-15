@@ -3,7 +3,7 @@ import useNavbar from "../hooks/useNavbar"
 
 const Navbar = () => {    
 
-    const { onLogout, user, logout } = useNavbar();
+    const { onLogout, user } = useNavbar();
     
 
     return (
