@@ -9,7 +9,7 @@ const PrivateRoute = ({ children }) => {
     const { pathname, search } = useLocation();
     
     const lastPath = pathname + search;
-    localStorage.setItem('lastPath', lastPath);
+    localStorage.setItem( 'lastPath', lastPath );
 
     return ( logged )
     ? children

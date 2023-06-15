@@ -10,13 +10,12 @@ const useLogin = () => {
     const onLogin = () => {
 
         const lastPath = localStorage.getItem('lastPath') || '/';
-        console.log(lastPath)
 
-        login('Juan Herrera');
+        login( 'Juan Herrera' );
 
         navigate( lastPath, {
             replace: true
-        });
+          });
     }
 
     return {
