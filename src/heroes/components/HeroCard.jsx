@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import { motion } from "framer-motion"
 
 const HeroCard = ({
     id,
@@ -11,7 +12,15 @@ const HeroCard = ({
     const heroImageUrl = `/assets/heroes/${id}.jpg`
 
     return ( 
-        <div className="col">
+        <motion.div 
+        initial={{ scale: 0 }}
+        animate={{ rotate: 0, scale: 1 }}
+        transition={{
+            type: "spring",
+            stiffness: 260,
+            damping: 20
+        }}
+        className="col">
             <div className="card">
                 <div className="row no-gutters">
                     <div className="col-4">
@@ -39,7 +48,7 @@ const HeroCard = ({
                     </div>
                 </div>
             </div>
-        </div>
+        </motion.div>
     )
 }
 

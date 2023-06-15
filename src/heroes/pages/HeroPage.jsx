@@ -1,7 +1,7 @@
 import { useParams, Navigate, useNavigate } from "react-router-dom"
 import getHeroById from "../helpers/getHeroById";
-import { useMemo } from "react";
-
+import { useMemo } from "react"
+import { motion } from "framer-motion";
 
 const HeroPage = () => {
 
@@ -22,7 +22,12 @@ const HeroPage = () => {
     }
 
     return (
-        <div className="row mt-5">
+        <motion.div 
+            whileInView={{x: [-50, 0], opacity: 1}}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.2, duration: 0.5 }}
+        className="row mt-5">
             <div className="col-4">
                 <img 
                 src={`/assets/heroes/${id}.jpg`} 
@@ -50,7 +55,7 @@ const HeroPage = () => {
                 </button>
 
             </div>
-        </div>
+        </motion.div>
     )
 }
 
