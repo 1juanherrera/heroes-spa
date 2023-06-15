@@ -48,7 +48,7 @@ const HeroPage = () => {
                 <p>{hero.characters}</p>
 
                 <button 
-                className="btn btn-outline-dark"
+                className="btn btn-outline-primary"
                 onClick={onNavigateBack}
                 >
                     Regresar
