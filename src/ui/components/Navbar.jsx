@@ -12,7 +12,7 @@ const Navbar = () => {
                 className="navbar-brand" 
                 to="/"
             >
-                Asociaciones
+                HeroApp
             </Link>
 
             <div className="navbar-collapse">
