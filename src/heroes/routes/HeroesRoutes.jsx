@@ -14,7 +14,7 @@ const HeroesRoutes = () => {
         <>
             <Navbar />
 
-            <div className="container">
+            <div className="container mb-5">
 
                 <Routes>
 
