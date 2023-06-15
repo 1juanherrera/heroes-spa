@@ -1,6 +1,6 @@
 import HeroCard from '../components/HeroCard'
 import { motion } from 'framer-motion'
-import useSearchPage from '../../hooks/useSearchPage'
+import useSearchPage from '../hooks/useSearchPage'
 
 const SearchPage = () => {
 

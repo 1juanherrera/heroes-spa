@@ -1,6 +1,6 @@
 import { useLocation, useNavigate } from 'react-router-dom'
 import queryString from 'query-string'
-import getHeroByName from '../heroes/helpers/getHeroByName'
+import getHeroByName from '../helpers/getHeroByName'
 import { useForm } from './useForm'
 
 const useSearchPage = () => {
