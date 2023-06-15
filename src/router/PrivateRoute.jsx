@@ -3,7 +3,7 @@ import AuthContext from "../auth/context/AuthContext"
 import { Navigate } from "react-router-dom";
 
 
-const PrivateRoute = () => {
+const PrivateRoute = ({ children }) => {
 
     const { logged } = useContext( AuthContext );
 
